@@ -1,0 +1,36 @@
+{
+	"name": "argy-news",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"type": "module",
+	"engines": {
+		"node": "16.x"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"node",
+		"scraping",
+		"news",
+		"kumpel"
+	],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@sparticuz/chromium": "^123.0.0",
+		"axios": "^1.7.2",
+		"cheerio": "1.0.0-rc.12",
+		"cors": "2.8.5",
+		"dotenv": "16.3.1",
+		"express": "^4.19.2",
+		"puppeteer-core": "^22.13.1",
+		"vercel": "^32.3.0"
+	},
+	"devDependencies": {
+		"nodemon": "3.1.0",
+		"puppeteer": "^22.13.1"
+	}
+}
