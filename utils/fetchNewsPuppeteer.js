@@ -2,11 +2,11 @@
 let chrome = {}
 let puppeteer;
 
-if (process.env.AWS.LAMBDA_FUNCTION_VERSION) {
-	chrome = import('@sparticuz/chromium')
-	puppeteer = import('puppeteer-core')
+if (process.env.AWS_LAMBDA_FUNCTION_VERSION) {
+	chrome = await import('@sparticuz/chromium')
+	puppeteer = await import('puppeteer-core')
 } else {
-	puppeteer = import('puppeteer')
+	puppeteer = await import('puppeteer')
 }
 
 let browser;
